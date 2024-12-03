@@ -1,19 +1,15 @@
 package practica3;
 
 public class Persona {
-
-    public String Nombre;
-    public String Apellido;
+    private String nombre;
+    private String apellido;
 
     public Persona(String nombre, String apellido) {
-        this.Nombre = nombre;
-        this.Apellido = apellido;
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 
-    public void Mostrar() {
-        System.out.println("==============================");
-        System.out.println("Nombre: " + this.Nombre);
-        System.out.println("Apellido: " + this.Apellido);
-        System.out.println("==============================");
+    public void mostrar() {
+        System.out.println("Nombre: " + nombre + ", Apellido: " + apellido);
     }
 }
