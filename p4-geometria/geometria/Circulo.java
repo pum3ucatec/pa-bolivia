@@ -1,30 +1,30 @@
 package geometria;
 
-import java.awt.Point;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Point;
 
 public class Circulo extends Geometria implements Dibujable {
     public Point centro;
     public int radio;
 
-    public Circulo(Point ce, int ra, Color c) {
-        super(c);
-        this.centro = ce;
-        this.radio = ra;
+    public Circulo(Point centro, int radio, Color color) {
+        super(color);
+        this.centro = centro;
+        this.radio = radio;
     }
 
     public double calcularArea() {
-        return Math.PI * Math.pow(this.radio, 2);
+        return Math.PI * radio * radio;
     }
 
     public double calcularPerimetro() {
-        return 2 * Math.PI * this.radio;
+        return 2 * Math.PI * radio;
     }
 
+    @Override
     public void dibujar(Graphics g) {
         g.setColor(this.color);
-        int diametro = 2 * this.radio;
-        g.fillOval(this.centro.x - this.radio, this.centro.y - this.radio, diametro, diametro);
+        g.fillOval(centro.x - radio, centro.y - radio, 2 * radio, 2 * radio);
     }
 }

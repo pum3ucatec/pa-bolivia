@@ -1,31 +1,30 @@
 package geometria;
 
-import java.awt.Point;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Point;
 
-public class Cuadrado extends Rectangulo {
+public class Cuadrado extends Geometria implements Dibujable {
+    public Point esquinaSuperiorIzquierda;
+    public int lado;
 
-    public Cuadrado(Point i, int lado, Color c) {
-        super(i, new Point(i.x + lado, i.y + lado), c);
+    public Cuadrado(Point esquina, int lado, Color color) {
+        super(color);
+        this.esquinaSuperiorIzquierda = esquina;
+        this.lado = lado;
     }
 
-    @Override
     public double calcularArea() {
-        int lado = Math.abs(this.inicial.x - this.fin.x);
         return lado * lado;
     }
 
-    @Override
     public double calcularPerimetro() {
-        int lado = Math.abs(this.inicial.x - this.fin.x);
         return 4 * lado;
     }
 
     @Override
     public void dibujar(Graphics g) {
         g.setColor(this.color);
-        int lado = Math.abs(this.inicial.x - this.fin.x);
-        g.fillRect(this.inicial.x, this.inicial.y, lado, lado);
+        g.fillRect(esquinaSuperiorIzquierda.x, esquinaSuperiorIzquierda.y, lado, lado);
     }
 }
