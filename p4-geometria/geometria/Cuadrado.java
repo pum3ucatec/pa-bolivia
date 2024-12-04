@@ -6,6 +6,7 @@ import java.awt.Graphics;
 
 public class Cuadrado extends Rectangulo {
 
+    
     public Cuadrado(Point i, int lado, Color c) {
         super(i, new Point(i.x + lado, i.y + lado), c);
     }

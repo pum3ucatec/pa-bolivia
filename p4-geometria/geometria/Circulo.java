@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class Circulo extends Geometria implements Dibujable {
+    
     public Point centro;
     public int radio;
 

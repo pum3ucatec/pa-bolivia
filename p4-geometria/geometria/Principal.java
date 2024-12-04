@@ -18,6 +18,7 @@ public class Principal extends JPanel {
 
     @Override
     protected void paintComponent(Graphics g) {
+        
         super.paintComponent(g);
         this.r1.dibujar(g);
         this.c1.dibujar(g);
