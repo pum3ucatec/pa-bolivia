@@ -1,6 +1,6 @@
-package geometria;
+package cuadrado;
 
-import java.awt.Color;
+
 import java.awt.Graphics;
 
 public interface Dibujable {

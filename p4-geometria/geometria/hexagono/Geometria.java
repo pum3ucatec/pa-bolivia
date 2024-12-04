@@ -1,6 +1,6 @@
-package geometria;
+package hexagono;
 
-import java.awt.Graphics;
+
 import java.awt.Color;
 
 public abstract class Geometria {
