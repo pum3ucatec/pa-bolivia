@@ -1,8 +1,7 @@
 package geometria;
 
-import javax.swing.*;
-
 import java.awt.*;
+import javax.swing.*;
 
 public class Principal extends JPanel {
 
@@ -11,9 +10,9 @@ public class Principal extends JPanel {
     public Cuadrado s1;
 
     public Principal() {
-        this.r1 = new Rectangulo(new Point(300, 200), new Point(500, 300), Color.RED);
-        this.c1 = new Circulo(new Point(200, 200), 50, Color.BLUE);
-        this.s1 = new Cuadrado(new Point(100, 100), 100, Color.GREEN);
+        this.r1 = new Rectangulo(new Point(300, 200), new Point(600, 400), Color.PINK);
+        this.c1 = new Circulo(new Point(300, 500), 50, Color.YELLOW);
+        this.s1 = new Cuadrado(new Point(100, 100), 100, Color.BLACK);
     }
 
     @Override
