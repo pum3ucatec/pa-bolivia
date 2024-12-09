@@ -27,5 +27,16 @@ public class Tablero extends JPanel {
         }
     }
 
-    
+    public boolean hayCeldasVacias() {
+        for (int fila = 0; fila < celdas.length; fila++) { // Recorrer filas
+            for (int columna = 0; columna < celdas[fila].length; columna++) { // Recorrer columnas
+                JButton boton = celdas[fila][columna]; // Obtener el botón actual
+                if (boton.getText().trim().isEmpty()) {
+                    return false;
+                }               
+            }
+        }
+        
+        return true;
+    }
 }
