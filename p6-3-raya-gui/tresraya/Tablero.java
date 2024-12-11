@@ -1,3 +1,4 @@
+package tresraya;
 // import javax.swing.JButton;
 // import javax.swing.JPanel;
 // import java.awt.GridLayout;
@@ -5,11 +6,12 @@
 // import java.awt.event.ActionListener;
 
 import javax.swing.*;
+
 import java.awt.*;
 
 public class Tablero extends JPanel {
     
-    public JButton[][] celdas;
+    public Celda[][] celdas;
     public int CANTIDAD = 3;
 
     public Tablero() {
@@ -17,11 +19,11 @@ public class Tablero extends JPanel {
 
         this.setLayout(miLayout);
 
-        this.celdas = new JButton[this.CANTIDAD][this.CANTIDAD];
+        this.celdas = new Celda[this.CANTIDAD][this.CANTIDAD];
 
         for (int f = 0; f < this.CANTIDAD; f++) {
             for (int c = 0; c < this.CANTIDAD; c++) {
-                this.celdas[f][c] = new JButton(" ");
+                this.celdas[f][c] = new Celda();
                 this.add(this.celdas[f][c]);
             }
         }

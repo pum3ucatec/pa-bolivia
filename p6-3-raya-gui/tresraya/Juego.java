@@ -1,3 +1,4 @@
+package tresraya;
 import java.awt.BorderLayout;
 import java.awt.event.*;
 import javax.swing.*;
@@ -36,7 +37,7 @@ public class Juego extends JPanel {
                 tablero.celdas[fila][columna].addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        JButton boton = tablero.celdas[fila][columna];
+                        Celda boton = tablero.celdas[fila][columna];
                         if (boton.getText().equals(" ")) { // Solo permitir si está vacía
                             boton.setText(String.valueOf(jugadorActual.simbolo));
                             if (verificarVictoria(jugadorActual)) {

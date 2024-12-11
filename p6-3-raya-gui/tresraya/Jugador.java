@@ -1,3 +1,4 @@
+package tresraya;
 
 public class Jugador {
     public String nombre;

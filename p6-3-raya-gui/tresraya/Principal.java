@@ -1,3 +1,4 @@
+package tresraya;
 import javax.swing.*;
 import java.awt.*;
 
