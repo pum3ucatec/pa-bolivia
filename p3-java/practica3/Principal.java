@@ -1,6 +1,6 @@
 package practica3;
-import practica3.Persona;
-import practica3.Auto;
+
+
 
 public class Principal {
 
@@ -13,10 +13,5 @@ public class Principal {
         objDavid.mostrar();
         objRaul.mostrar();
 
-        Auto objAuto1 = new Auto("Nissan", "Versa", "Rojo", 2018, "ABC-123");
-        Auto objAuto2 = new Auto("Chevrolet", "Spark", "Blanco", 2019, "XYZ-456");
-
-        objAuto1.Mostrar();
-        objAuto2.Mostrar();
     }
 }
