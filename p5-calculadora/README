@@ -1,0 +1,7 @@
+para iniciar la calculadora debes seguir los siguientes pasos en VSC:
+1. Situarte por fuera de la carpeta "Calculadora"
+2. Ejecutar el siguiente comando: java Calculadora/Calculadora.java
+3. Automaticamente va abrir una nueva ventana con la calculadora
+
+La calculadora presentada solo es una avance de la practica, aun falta completar la funcion de escribir en la pantalla y de que realice las operaciones.
+Sin embargo, toda la parte grafica ya esta realizado y para asegurar de que los botones funcionan agregue una pequena funcion que indica cual boton fue pulsado.
