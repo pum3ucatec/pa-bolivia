@@ -1,0 +1,6 @@
+debemos ir a la siguiente carpeta desde Visual Studio Code:
+Examen-Final
+a continuacion debemos ejecutar el siguiente comando para el triangulo:
+java triangulo/Principal.java
+y para poder ver la elipse ejecutamos el siguiente comando:
+java elipse/Principal.java
