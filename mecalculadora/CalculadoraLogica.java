@@ -1,7 +1,7 @@
 package mecalculadora;
 
 public class CalculadoraLogica {
-    // Métodos para operaciones matemáticas
+    
     public double sumar(double a, double b) {
         return a + b;
     }
