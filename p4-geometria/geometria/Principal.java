@@ -9,11 +9,15 @@ public class Principal extends JPanel {
     public Rectangulo r1;
     public Circulo c1;
     public Cuadrado s1;
+    public Triangulo t1;
+    public Elipse e1;
 
     public Principal() {
         this.r1 = new Rectangulo(new Point(300, 200), new Point(500, 300), Color.RED);
         this.c1 = new Circulo(new Point(200, 200), 50, Color.BLUE);
         this.s1 = new Cuadrado(new Point(100, 100), 100, Color.GREEN);
+        this.t1 = new Triangulo(new Point(400, 400), new Point(450, 350), new Point(500, 400), Color.YELLOW);
+        this.e1 = new Elipse(new Point(600, 200), 100, 50, Color.MAGENTA);
     }
 
     @Override
@@ -22,6 +26,8 @@ public class Principal extends JPanel {
         this.r1.dibujar(g);
         this.c1.dibujar(g);
         this.s1.dibujar(g);
+        this.t1.dibujar(g);
+        this.e1.dibujar(g);
     }
 
     public static void main(String[] args) {
